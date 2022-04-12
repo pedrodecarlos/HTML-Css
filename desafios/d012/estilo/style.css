@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "passion one";
+    src: url("../fontes/PassionOne-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "sriracha";
+    src: url("../fontes/Sriracha-Regular.ttf") format("truetype");
+}
+
+:root {
+    --fonte1: verdana, Tahoma, sans-serif;
+    --fonte2:  "passion one";
+    --fonte3: "sriracha";
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +24,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header {
     background-color: black;
@@ -17,6 +34,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 header > p {
     padding-bottom: 50px;
@@ -34,6 +53,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 section.normal {
     background-color: white;
@@ -42,10 +63,12 @@ section.normal {
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    display: inline-block;
+    padding: 5px;
 }
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.253);
-    width: 400px;
+   
 }
 footer {
     background-color: black;
