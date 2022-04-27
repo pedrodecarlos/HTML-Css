@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eercícios de Tabela</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    caption {
+        font-weight: bold;
+    }
+    table {
+        border-collapse: collapse;
+        width: 500px;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    col.cnome {
+        background-color: aquamarine;
+    }
+    col.cgrupo{
+        background-color: darkgray;
+    }
+</style>
+<body>
+    <h1>Eercícios de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Pedro Carlos</td>
+            <td>M</td>
+            <td>20</td>
+            <td>WEB Developer</td>
+        </tr>
+        <tr>
+            <td>Gerson Mayamba</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Informático</td>
+        </tr>
+        <tr>
+            <td>Raquel Mayamba</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Pedagóga</td>
+        </tr>
+        <tr>
+            <td>Abigail Mayamba</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Enfermeira</td>
+        </tr>
+        <tr>
+            <td>Lusey Joel</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Piloto</td>
+        </tr>
+    </table>
+</body>
+</html>

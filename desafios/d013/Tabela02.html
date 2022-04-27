@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 10px;
+    }
+    td {
+        border: 1px solid black;
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+        box-shadow: 1px 1px 1px rgb(128, 128, 128)
+    }
+    td.tdnone {
+        padding: 10px 20px 10px 20px;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td class="tdnone">D</td>
+            <td class="tdnone">E</td>
+            <td class="tdnone">F</td>
+        </tr>
+        <tr>
+            <td class="tdnone">G</td>
+            <td class="tdnone">H</td>
+            <td class="tdnone">I</td>
+        </tr>
+        <tr>
+            <td class="tdnone">J</td>
+            <td class="tdnone">L</td>
+            <td class="tdnone">M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+</body>
+</html>
